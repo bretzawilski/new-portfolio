@@ -3,6 +3,56 @@ html {
     background-color: #C2FFF3;
 }
 
+nav {
+	border-color: red;
+	border-width: 10px;
+	border-style: solid;
+	/*Radius is unneccesary here. Just for testing. Starts upper left. */
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+
+	margin: -15px -98px 0px -8px;
+
+}
+
+nav>ul {
+	list-style: none;
+}
+
 body {
     font-family: Verdana,sans-serif;
 }
+
+.red-background {
+	background-color: red;
+}
+
+.orange-background {
+	background-color: orange;
+}
+
+.blue-background {
+	background-color: lightblue;
+}
+
+.silver-background {
+	background-color: silver;
+}
+
+.green-background {
+	background-color: green;
+}
+
+.purple-background {
+	background-color: purple;
+}
+
+.yellow-background {
+	background-color: yellow;
+}
+
+
+
+
+
+
