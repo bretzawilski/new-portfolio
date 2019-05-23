@@ -1,5 +1,5 @@
 html {
-    margin-right: 90px;
+    /*margin-right: 90px;*/
     background-color: #C2FFF3;
 }
 
@@ -10,9 +10,7 @@ nav {
 	/*Radius is unneccesary here. Just for testing. Starts upper left. */
 	border-radius: 10px 10px 0px 0px;
 	text-align: center;
-
-	margin: -15px -98px 0px -8px;
-
+	/*margin: -15px -98px 0px -8px;*/
 }
 
 nav>ul {
@@ -21,6 +19,19 @@ nav>ul {
 
 body {
     font-family: Verdana,sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h2:hover {
+	color: red;
+}
+
+div {
+	padding: 10px;
+	margin: 10px;
 }
 
 .red-background {
@@ -49,6 +60,16 @@ body {
 
 .yellow-background {
 	background-color: yellow;
+}
+
+#portfolio {
+	text-align: justify;
+	padding: 1em;
+	border-color: green;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
