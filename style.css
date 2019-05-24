@@ -1,21 +1,174 @@
 html {
     /*margin-right: 90px;*/
     background-color: #C2FFF3;
+    background: url(images/papyrus.png);
 }
 
 nav {
+	height: 80px;
+	width: 100%;
+	margin-top: -10px;
+	margin-left: -8px;
+	padding-left: -10px;
 	border-color: red;
-	border-width: 10px;
+	border-width: 1px;
 	border-style: solid;
+	position: absolute;
 	/*Radius is unneccesary here. Just for testing. Starts upper left. */
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
 	text-align: center;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 	/*margin: -15px -98px 0px -8px;*/
+	/*animation-name: background-color;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;*/
 }
 
-nav>ul {
+/*@keyframes background-color {
+	0% {
+		background-color: green;
+		border-radius: 0% 0% 50% 50%;
+	}
+	50% {
+		background-color: red;
+	}
+	100% {
+		background-color: blue;
+		border-radius: 0px 0px 10px 10px;
+	}
+}*/
+
+nav ul {
 	list-style: none;
 }
+
+nav li {
+	display: inline;
+	text-decoration: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2%;
+}
+
+a:hover {
+	color: gray;
+	text-decoration: underline;
+
+}
+/* Intro code and slide-in animation*/
+#intro {
+	z-index: 10;
+	padding-top: 100px;
+	width: 60%;
+	margin: auto;
+	background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+	box-shadow: 2px 4px 4px 4px rgba(0,0,0,0.2), 0 0 2px 2px rgba(0,0,0,0.29);
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#intro>h1 {
+	text-align: center;
+}
+
+#prof {
+	animation-name: slide-in-prof;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	position: relative;
+	text-align: right;
+}
+
+@keyframes slide-in-prof {
+	0% {
+		right: 150%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		right: 2%;
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+}
+
+#artist {
+	animation-name: slide-in-artist;
+	animation-duration: 1.1s;
+	animation-fill-mode: forwards;
+	position: relative;
+	text-align: right;
+}
+
+
+@keyframes slide-in-artist {
+	0% {
+		right: 150%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		right: 2%;
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+}
+
+#writer {
+	animation-name: slide-in-writer;
+	animation-duration: 1.2s;
+	animation-fill-mode: forwards;
+	position: relative;
+	text-align: right;
+}
+
+@keyframes slide-in-writer {
+	0% {
+		right: 150%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		right: 2%;
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+}
+
+#pod {
+	animation-name: slide-in-pod;
+	animation-duration: 1.3s;
+	animation-fill-mode: forwards;
+	position: relative;
+	text-align: right;
+}
+
+@keyframes slide-in-pod {
+	0% {
+		right: 150%;
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	100% {
+		right: 2%;
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+}
+/* END INTRO CODE */
 
 body {
     font-family: Verdana,sans-serif;
@@ -70,6 +223,7 @@ div {
 	border-style: solid;
 	border-radius: 10px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.23);
+	background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
 }
 
 
